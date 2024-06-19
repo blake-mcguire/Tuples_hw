@@ -7,11 +7,9 @@ our_routes = {"LAX", "JFK", "CDG", "DXB"}
 competitor_routes = {"JFK", "CDG", "LHR", "BKK"}
 
 def find_destinations(our_routes, competitor_routes):
-    # find out what desitnations are in both lists
+    
     print(f"Destinations in both lists: {our_routes.intersection(competitor_routes)}")
-    # find out what destinations are in only one list
     print(f"Destinations in only one list: {our_routes.symmetric_difference(competitor_routes)}")
-    # find out what destinations are in neither list
     print(f"Destinations in neither list: {our_routes.difference(competitor_routes)}")
     
 find_destinations(our_routes, competitor_routes)
